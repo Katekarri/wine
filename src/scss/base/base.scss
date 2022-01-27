@@ -1,1 +1,12 @@
 /*общие стили для элентов которые использются на всем сайте однаковые ссылки или кнопки*/
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import "./reset.scss";
