@@ -1,0 +1,17 @@
+# Ignore local editor
+.project
+.settings
+.idea
+*.swp
+tags
+nbproject/*
+.vscode
+.gihub
+
+# Windows
+Thumbs.db
+
+npm-debug.log
+
+node_modules/
+dist/
