@@ -1,7 +1,7 @@
 ## Requirements
 
-* `node` : `^12 || >=14`
-* `npm`
+- `node` : `^12 || >=14`
+- `npm`
 
 # Setup
 
@@ -9,9 +9,9 @@
 
 1. Choose and download the latest template release from [List of Releases](https://github.com/WeAreAthlon/frontend-webpack-boilerplate/releases).
 2. Extract the release archive to a new directory, rename it to your project name and browse the directory.
-3. Install all dependencies using `npm` *clean install* command. 
+3. Install all dependencies using `npm` _clean install_ command.
 
-```sh 
+```sh
 $ npm ci
 ```
 
@@ -21,28 +21,26 @@ $ npm ci
 
 ## Define Package Metadata
 
-* Amend `package.json` file and optionally specify:
-  * `name` - Name of your project. A name can be optionally prefixed by a scope, e.g. `@myorg/mypackage`.
-  * `version` - Specify and maintain a version number indicator for your project code.
-  * `author` - Your organisation or just yourself. You can also specify [`contributors`](https://docs.npmjs.com/files/package.json#people-fields-author-contributors).
-  * `description` - Short description of your project.
-  * `keywords` - Put keywords in it. It’s an array of strings.
-  * `repository` - Specify the place where your code lives.
-  * `license` - Announce your code license, figure out the license from [Choose an Open Source License](https://choosealicense.com) .
-  * `browserslist` - Specify the supported browsers versions - you can refer to [full list](https://github.com/browserslist/browserslist#full-list) of availalbe options.
-
-
+- Amend `package.json` file and optionally specify:
+  - `name` - Name of your project. A name can be optionally prefixed by a scope, e.g. `@myorg/mypackage`.
+  - `version` - Specify and maintain a version number indicator for your project code.
+  - `author` - Your organisation or just yourself. You can also specify [`contributors`](https://docs.npmjs.com/files/package.json#people-fields-author-contributors).
+  - `description` - Short description of your project.
+  - `keywords` - Put keywords in it. It’s an array of strings.
+  - `repository` - Specify the place where your code lives.
+  - `license` - Announce your code license, figure out the license from [Choose an Open Source License](https://choosealicense.com) .
+  - `browserslist` - Specify the supported browsers versions - you can refer to [full list](https://github.com/browserslist/browserslist#full-list) of availalbe options.
 
 # Development
 
 ## Assets Source
 
-* **SASS/PostCSS** files are located under `src/scss/`
-* **JavaScript** files with support of latest ECMAScript _ES6 / ECMAScript 2016(ES7)/ etc_ files are located under `src/js/`
-* **Image** files are located under `src/images/`
-* **Font** files are located under `src/fonts/`
-* **HTML** files are located under `src/`
-  * It will **automatically** build **all HTML files** placed under `src/` directory, no need to manually configure each template anymore!
+- **SASS/PostCSS** files are located under `src/scss/`
+- **JavaScript** files with support of latest ECMAScript _ES6 / ECMAScript 2016(ES7)/ etc_ files are located under `src/js/`
+- **Image** files are located under `src/images/`
+- **Font** files are located under `src/fonts/`
+- **HTML** files are located under `src/`
+  - It will **automatically** build **all HTML files** placed under `src/` directory, no need to manually configure each template anymore!
 
 ## Build Assets
 
@@ -60,14 +58,14 @@ $ npm run watch
 
 This command is suitable if you develop with external web server.
 
-> **Note:** File watching does not work with *NFS* (*Windows*) and virtual machines under *VirtualBox*. Extend the configuration in such cases by:
+> **Note:** File watching does not work with _NFS_ (_Windows_) and virtual machines under _VirtualBox_. Extend the configuration in such cases by:
 
 ```js
 module.exports = {
   //...
   watchOptions: {
-    poll: 1000 // Check for changes every second
-  }
+    poll: 1000, // Check for changes every second
+  },
 };
 ```
 
@@ -77,7 +75,7 @@ module.exports = {
 $ npm run dev
 ```
 
-# Production 
+# Production
 
 ## Build Assets
 
@@ -89,13 +87,13 @@ $ npm run production
 
 ## Get Built Assets
 
-* _CSS_ files are located under `/dist/css/`
-* _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/dist/js/`
-* _Images_ are located under `/dist/images/`
-  * Images part of the _design_ (_usually referenced in the CSS_) are located under `/dist/images/design/`
-  * Images part of the _content_ (_usually referenced via `<img>` tags_) are located under `/dist/images/content/`
-* _Fonts_ are located under `/dist/fonts/`
-* _HTML_ files are located under `/dist/`
+- _CSS_ files are located under `/dist/css/`
+- _JavaScript_ files with support of _ES6 / ECMAScript 2016(ES7)_ files are located under `/dist/js/`
+- _Images_ are located under `/dist/images/`
+  - Images part of the _design_ (_usually referenced in the CSS_) are located under `/dist/images/design/`
+  - Images part of the _content_ (_usually referenced via `<img>` tags_) are located under `/dist/images/content/`
+- _Fonts_ are located under `/dist/fonts/`
+- _HTML_ files are located under `/dist/`
 
 # Run Code Style Linters
 
@@ -104,6 +102,7 @@ $ npm run production
 ```sh
 $ npm run lint:sass
 ```
+
 ## JavaScript
 
 ```sh

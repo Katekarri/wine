@@ -1,0 +1,8 @@
+p {
+  color: $primary-color;
+  @include clearfix;
+}
+
+h1 {
+  color: rgb(139, 16, 16);
+}
