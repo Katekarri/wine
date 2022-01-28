@@ -3,6 +3,8 @@ p {
   @include clearfix;
 }
 
-h1 {
-  color: rgb(139, 16, 16);
+.container {
+  margin: 0 auto;
+  width: 1440px;
+  padding: 0 20px;
 }
