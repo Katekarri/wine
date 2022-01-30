@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list-left {
+  background-image: url(/src/images/content/Rectangle.jpg);
+}
