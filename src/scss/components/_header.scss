@@ -1,6 +1,10 @@
 .header {
-  background-image: url(/src/images/content/Rectangle.jpg);
-  background-size: cover;
-  background-position: center 0;
-  background-repeat: no-repeat;
+  background-color: rgb(20, 37, 31);
+  color: #fff;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 96px;
 }

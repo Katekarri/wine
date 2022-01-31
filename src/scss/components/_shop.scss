@@ -1,0 +1,49 @@
+.shop {
+  display: flex;
+}
+
+.shop-img {
+  background-image: url(/src/images/content/Rectangle.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  display: block;
+}
+
+.shop-info {
+  background-color: #996b60;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+}
+
+.shop-title {
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 96px;
+  width: 80%;
+  margin-left: 60px;
+}
+
+.shop-txt {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  width: 80%;
+  margin-left: 60px;
+}
+
+.shop-button {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #996b60;
+  border: 2px solid #ffffff;
+  padding: 15px 40px;
+  margin-left: 60px;
+}
