@@ -1,43 +1,44 @@
+/*используем вложенность для scss элементов*/
+
 .shop {
   display: flex;
+  margin: -96px 0 0;
+}
+.shop-coll {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
 }
 
 .shop-img {
   background-image: url(/src/images/content/Rectangle.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: -96px 0 0;
-  width: 100%;
-  height: 800px;
-  display: block;
 }
 
 .shop-info {
-  background-color: #996b60;
-  width: 100%;
-  color: #fff;
+  background-color: $second-color;
+  color: $primary-color;
   text-align: left;
-  margin: -96px 0 0;
-  width: 100%;
-  height: 800px;
-  display: block;
+  padding: 312px 0 0 60px;
 }
 
 .shop-title {
   font-weight: 400;
   font-size: 73px;
   line-height: 96px;
-  width: 80%;
-  margin: 312px 0 0 60px;
 }
 
 .shop-txt {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  color: #ffffff;
+  color: $primary-color;
   width: 80%;
-  margin: 34px 0 0 60px;
+  margin: 34px 0 0;
+}
+
+.shop-wrap {
+  margin: 46px 0 0 0;
 }
 
 .shop-button {
@@ -47,15 +48,15 @@
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #000000;
-  background-color: #996b60;
-  border: 2px solid #ffffff;
+  color: $dark-color;
+  background-color: $second-color;
+  color: $dark-color;
   padding: 15px 40px;
-  margin: 46px 0 0 60px;
+  border: 2px solid $primary-color;
   cursor: pointer;
 }
 
 .shop-button:hover {
-  color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: $primary-color;
+  box-shadow: $shadow-color;
 }

@@ -20,19 +20,20 @@
     </div>
   </div>
   <header class="header">
-    <div class="container container-header">
-      <ul class="nav-list nav-list-left">
-        <li class="nav-item nav-item-left">shop</li>
-        <li class="nav-item nav-item-left">membership</li>
-        <li class="nav-item nav-item-left">our story</li>
-      </ul>
+    <div class="container header-container">
+      <nav class="nav nav--add">
+        <ul class="nav-list">
+          <li class="nav-item">shop</li>
+          <li class="nav-item">membership</li>
+          <li class="nav-item">our story</li>
+        </ul>
       </nav>
-      <i class="logo"></i>
+      <a class="logo" href="#"></a>
       <nav class="nav">
-        <ul class="nav-list nav-list-right">
-          <li class="nav-item nav-item-right">Newsletter</li>
-          <li class="nav-item nav-item-right">Account</li>
-          <li class="nav-item nav-item-right">Cart ( 0 )</li>
+        <ul class="nav-list">
+          <li class="nav-item">Newsletter</li>
+          <li class="nav-item">Account</li>
+          <li class="nav-item">Cart ( 0 )</li>
         </ul>
       </nav>
     </div>
@@ -40,32 +41,35 @@
   <main class="main">
     <div class="container">
       <section class="shop">
-        <div class="shop-img"></div>
-        <div class="shop-info">
+        <div class="shop-img shop-coll"></div>
+        <div class="shop-info shop-coll">
           <h1 class="shop-title">Alcohol for the modern drinker</h1>
           <p class="shop-txt">Light and refreshing flavors made with real, clean ingredients you can feel good about.
             Just
             pour, sip, and enjoy.</p>
-          <button class="shop-button">Shop ALL</button>
+          <div class="shop-wrap">
+            <button class="shop-button">Shop ALL</button>
+          </div>
         </div>
       </section>
       <section class="magazine">
         <ul class="magazine-list">
           <li class="magazine-item">
             <blockquote class="magazine-quot">"What makes Haus so special is its incredible flavors."</blockquote>
-            <i class="magazine-icon magazine-icon-left"></i>
+            <i class="magazine-icon magazine-icon-food"></i>
           </li>
           <li class="magazine-item">
             <blockquote class="magazine-quot">“For the wine or cocktail lover who's tried it all and wants something new
               and refreshing.”</blockquote>
-            <i class="magazine-icon magazine-icon-middle"></i>
+            <i class="magazine-icon magazine-icon-nyt"></i>
           </li>
           <li class="magazine-item">
             <blockquote class="magazine-quot">“Cleaner, responsibly sourced, and lower in alcohol.”</blockquote>
-            <i class="magazine-icon magazine-icon-right"></i>
+            <i class="magazine-icon magazine-icon-appetit"></i>
           </li>
         </ul>
         <div class="magazine-line"></div>
+        <!--не стоит занимать html элементами не несущими никакой нагрузки, задай :after для magazin-->
       </section>
     </div>
   </main>

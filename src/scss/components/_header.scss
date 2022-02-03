@@ -1,11 +1,11 @@
 .header {
-  color: #fff;
-}
-.container-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 96px;
-  position: relative;
-  z-index: 10;
+  &-container {
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    position: relative;
+    z-index: 10;
+  }
 }

@@ -5,14 +5,13 @@
 }
 
 .promp {
-  background-color: black;
-}
-
-.promp-txt {
-  padding: 10px 0;
-  font-family: Roboto;
-  font-weight: 400;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
+  background-color: $dark-color;
+  &-txt {
+    padding: 10px 0;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    color: $primary-color;
+    text-align: center;
+  }
 }
