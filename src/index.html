@@ -21,13 +21,24 @@
   </div>
   <header class="header">
     <div class="container container-header">
-      <ul class="nav-list nav-list-left">
+      <ul class="nav-list nav-list-left"><!--Обе навигации в шапке совершенно идентичны, отличаются лишь выравниванием элементов по левому/правому краю
+      - поэтому и структура должна быть идентична, лишь у одной из навигации должен быть модификатор, который выравнивает элементы по противоположному краю от дефолтного
+    модификатор задается родителю а не пунктам (модификаторы прописывай в стиле отличном от элементов, например не одно тире а два)
+    <nav class="nav"> -дефолтные стили
+      <li class="nav-item">...</li>
+    </nav>
+  
+    и
+
+  <nav class="nav nav--add"> - выравнивание по правому краю
+        <li class="nav-item">...</li>
+      </nav>-->
         <li class="nav-item nav-item-left">shop</li>
         <li class="nav-item nav-item-left">membership</li>
         <li class="nav-item nav-item-left">our story</li>
       </ul>
       </nav>
-      <i class="logo"></i>
+      <i class="logo"></i> <!--помним, что когда многостраничный сайт, логотип делается ссылкой-->
       <nav class="nav">
         <ul class="nav-list nav-list-right">
           <li class="nav-item nav-item-right">Newsletter</li>
@@ -46,7 +57,8 @@
           <p class="shop-txt">Light and refreshing flavors made with real, clean ingredients you can feel good about.
             Just
             pour, sip, and enjoy.</p>
-          <button class="shop-button">Shop ALL</button>
+          <button class="shop-button">Shop ALL</button> <!--я все еще за то, чтобы кнопка не болталась в воздухе, делаем ей контейнер, которому задаем внешние отступы
+          у кнопки должны быть стили только те, которые касаются только кнопки-->
         </div>
       </section>
       <section class="magazine">
@@ -65,7 +77,7 @@
             <i class="magazine-icon magazine-icon-right"></i>
           </li>
         </ul>
-        <div class="magazine-line"></div>
+        <div class="magazine-line"></div> <!--не стоит занимать html элементами не несущими никакой нагрузки, задай :after для magazin-->
       </section>
     </div>
   </main>

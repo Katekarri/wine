@@ -1,8 +1,10 @@
+/*используем вложенность для scss элементов*/
+
 .magazine {
 }
 
 .magazine-list {
-  margin-top: 55px;
+  margin-top: 55px; /*я бы этот отсутп задала родителю, все таки это отступ между magazin и shop, а не между magazin-list и shop? плюс отстойно, когда элементы вываливаются из родителей*/
   display: flex;
   justify-content: space-around;
 }
@@ -18,23 +20,24 @@
   margin: 0 auto;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  width: 300px;
+  width: 300px;/*не ограничиываем ширину статично, плюс у тебя item максимально 280px, если картинка 300, то как она влезет
+  задаем обертке, я бы эти логотипы делала вообще картинками, в любом случае для icon задаем width: 100%  */
   height: 50px;
   display: block;
   margin-top: 40px;
 }
 .magazine-icon-left {
-  background-image: url(/src/images/icons/food.svg);
+  background-image: url(/src/images/icons/food.svg);/*здесь прописываем bg-size: contain и все красиво и влазит в родителя и при любом разрешении*/
 }
 
-.magazine-icon-middle {
-  background-image: url(/src/images/icons/middle.svg);
+.magazine-icon-middle { /*классы не называем по расположению элемента, а если колонки поменяются местами? */
+  background-image: url(/src/images/icons/middle.svg);/*здесь прописываем bg-size: contain и все красиво и влазит в родителя и при любом разрешении*/
 }
 .magazine-icon-right {
-  background-image: url(/src/images/icons/right.svg);
+  background-image: url(/src/images/icons/right.svg);/*здесь прописываем bg-size: contain и все красиво и влазит в родителя и при любом разрешении*/
 }
 
-.magazine-line {
+.magazine-line { 
   width: 100%;
   border: 1px solid #bdbdbd;
   margin-top: 50px;

@@ -1,11 +1,16 @@
 .header {
-  color: #fff;
+  color: #fff; //бесполезный стиль ни на что не влияет
+  /*
+    &-container {
+      ...
+    }
+  */
 }
-.container-header {
+.container-header { /*элементы по БЭМ лучше называть в зависимости от рожителя -  то есть тут логичнее header-container, тогда и вложеность scss можно будет использовать*/
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 96px;
   position: relative;
-  z-index: 10;
-}
+  z-index: 10; /*z-index - задается элементам, которые лежат на одном уровне вложенности, так как этот элемент единственный дочерний, то этот стиль тоже бесполезный*/
+} 

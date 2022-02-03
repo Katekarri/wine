@@ -1,34 +1,41 @@
+/*используем вложенность для scss элементов*/
+
 .shop {
   display: flex;
 }
 
+/*
+  shop-info и shop-img кроме бэкграунда имеют совершенно одинаковые стили, не лучше ли использовать один общий класс, например shop-coll
+  и второй класс уже для задания разных бэкграундов, очень плохая практика когда один и тот же код копируется
+*/
+
 .shop-img {
   background-image: url(/src/images/content/Rectangle.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  margin: -96px 0 0;
+  background-size: cover;/*используй сокращенные записи*/
+  margin: -96px 0 0; /*когда у двух дочерних элементов есть один и тот же отступ, то логичнее его задать родителю*/
   width: 100%;
   height: 800px;
-  display: block;
+  display: block; /*это div он итак блочный*/
 }
 
 .shop-info {
-  background-color: #996b60;
+  background-color: #996b60;/*переменная*/
   width: 100%;
-  color: #fff;
+  color: #fff;/*переменная*/
   text-align: left;
-  margin: -96px 0 0;
+  margin: -96px 0 0;/*когда у двух дочерних элементов есть один и тот же отступ, то логичнее его задать родителю*/
   width: 100%;
   height: 800px;
-  display: block;
+  display: block;/*это div он итак блочный*/
 }
 
 .shop-title {
   font-weight: 400;
   font-size: 73px;
   line-height: 96px;
-  width: 80%;
-  margin: 312px 0 0 60px;
+  width: 80%; /*width в данном случае нет смысла ограничивать, боковые отступы сами все сделают*/
+  margin: 312px 0 0 60px; /*боковые одинаковые отступы(с двух сторон) прописываются родителю, у тайтла верхний отступ тоже прописывается родителю*/
 }
 
 .shop-txt {
@@ -37,7 +44,7 @@
   line-height: 32px;
   color: #ffffff;
   width: 80%;
-  margin: 34px 0 0 60px;
+  margin: 34px 0 0 60px;/*боковые отьступы родителю*/
 }
 
 .shop-button {
@@ -47,15 +54,15 @@
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #000000;
-  background-color: #996b60;
-  border: 2px solid #ffffff;
+  color: #000000;/*переменная*/
+  background-color: #996b60;/*переменная*/
+  border: 2px solid #ffffff;/*переменная*/
   padding: 15px 40px;
-  margin: 46px 0 0 60px;
+  margin: 46px 0 0 60px;/*боковые отьступы родителю*/
   cursor: pointer;
 }
 
 .shop-button:hover {
-  color: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #ffffff;/*переменная*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);/*переменная, если тени везде с одинаковыми параметрами, то переменную можно прям полностью для тенбшки создать*/
 }
