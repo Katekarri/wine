@@ -1,0 +1,106 @@
+.products {
+  @include line;
+  &-description {
+    margin: 105px 324px 125px;
+  }
+  &-title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    color: $dark-color;
+  }
+  &-flavors {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $dark-color;
+    display: block;
+  }
+  &-list {
+    display: flex;
+  }
+
+  &-img {
+    margin: 0 auto;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 451px;
+    background-size: contain;
+    &-sampler {
+      background-image: url(/src/images/content/kit.jpg);
+    }
+    &-grapefruit {
+      background-image: url(/src/images/content/grapefruit.jpg);
+    }
+    &-citrus {
+      background-image: url(/src/images/content/flower.jpg);
+    }
+  }
+
+  &-best {
+    position: relative;
+  }
+  &-txt {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $primary-color;
+    background-color: $dark-color;
+    padding: 54px 21px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 35px;
+  }
+  &-information {
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 55px;
+  }
+  &-subtitle {
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 44px;
+    text-align: center;
+    color: $dark-color;
+  }
+  &-info {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: $dark-color;
+  }
+
+  &-wrap {
+    margin: 30px 0 80px 0;
+  }
+
+  &-button {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $primary-color;
+    background-color: $dark-color;
+    cursor: pointer;
+    padding: 10px 30px;
+  }
+
+  &-button:hover {
+    box-shadow: $shadow-color;
+    color: $second-color;
+  }
+}

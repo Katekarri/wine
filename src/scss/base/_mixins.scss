@@ -5,8 +5,17 @@
 @mixin clearfix {
   &::after {
     clear: both;
-    content: '';
+    content: "";
     display: table;
   }
 }
 
+@mixin line {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid $line-color;
+    margin-top: 50px;
+  }
+}

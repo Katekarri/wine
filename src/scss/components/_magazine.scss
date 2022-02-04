@@ -1,42 +1,34 @@
-/*используем вложенность для scss элементов*/
 .magazine {
   margin-top: 55px;
-}
-.magazine-list {
-  display: flex;
-  justify-content: space-around;
-}
-.magazine-item {
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 32px;
-  max-width: 300px;
-}
-
-.magazine-icon {
-  margin: 0 auto;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 50px;
-  display: block;
-  margin-top: 40px;
-  background-size: contain;
-}
-.magazine-icon-food {
-  background-image: url(/src/images/icons/food.svg);
-}
-
-.magazine-icon-nyt {
-  background-image: url(/src/images/icons/middle.svg);
-}
-.magazine-icon-appetit {
-  background-image: url(/src/images/icons/right.svg);
-}
-
-.magazine-line {
-  width: 100%;
-  border: 1px solid $line-color;
-  margin-top: 50px;
+  @include line;
+  &-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  &-item {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    max-width: 300px;
+  }
+  &-icon {
+    margin: 0 auto;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin-top: 40px;
+    background-size: contain;
+    &-food {
+      background-image: url(/src/images/icons/food.svg);
+    }
+    &-nyt {
+      background-image: url(/src/images/icons/middle.svg);
+    }
+    &-appetit {
+      background-image: url(/src/images/icons/right.svg);
+    }
+  }
 }
