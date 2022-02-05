@@ -16,6 +16,6 @@
     display: block;
     width: 100%;
     border: 1px solid $line-color;
-    margin-top: 50px;
+    margin-top: 50px; /*отступа у лайн не должно быть, он задается родителю элемента, который идет перед лайн*/
   }
 }

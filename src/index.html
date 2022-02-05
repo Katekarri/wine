@@ -67,18 +67,21 @@
         </ul>
       </section>
       <section class="products">
-        <div class="products-description">
+        <div class="products-description"> <!--рекомендация по классам, тут все таки не описание, а заголовок лучше было назвать products-header например -->
           <h3 class="products-title">Made with natural ingredients, nothing fake</h3>
-          <span class="products-flavors">Shop All Flavors</span>
+          <span class="products-flavors">Shop All Flavors</span> <!--дополнения к заголовку обычно можно назвать либо product-title-add либо product-subtitle(подзаголовок) 
+            а так текст изменится и flavors станет не актуально, и лучше использовать параграф а не спан-->
         </div>
         <ul class="products-list">
           <li class="products-item">
-            <div class="products-img products-img-sampler"></div>
+            <div class="products-img products-img-sampler"></div> <!--здесь картинки будут картинками а не фоновыми изображениями, так что внутрь дива советую положить img-->
             <div class="products-information">
-              <h4 class="products-subtitle">The Sampler Kit</h4>
+              <h4 class="products-subtitle">The Sampler Kit</h4> <!--подзаголовком чаще называют описание/дополнение к заголовку, тут все же полноценный заголовок
+              product-flavors (product-name) как раз тут был бы актуален, так как здесь идут названия вкусов-->
               <p class="products-info">Try a variety of Haus flavors with our customizable four-bottle kit. Each bottle
-                serves 2-3 drinks.</p>
-              <div class="products-wrap">
+                serves 2-3 drinks.</p><!--в блок information ложить блок info, в будущем во всех информациях запутаться можно,
+                лучше просто использовать product-txt-->
+              <div class="products-wrap"><!--блоки с кнопкой/кнопками чаще всего оборачиваются в блок с названием action, в данном случае product-action-->
                 <button class="products-button">Shop Now</button>
               </div>
             </div>
