@@ -1,0 +1,41 @@
+.review {
+  &-container {
+    background-color: $dark-color;
+    max-width: 1440px;
+    display: flex;
+    padding: 75px 50px 50px;
+    gap: 160px;
+  }
+  &-quot {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 17px;
+  }
+
+  &-client {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $primary-color;
+    margin-bottom: 17px;
+  }
+
+  &-status {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $status-color;
+    display: block;
+  }
+
+  &-wrap {
+    max-width: 330px;
+  }
+}

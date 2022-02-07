@@ -1,0 +1,29 @@
+.qualities {
+  display: flex;
+  margin: 50px 0;
+
+  &-description {
+    margin: 55px 108px 0 0;
+  }
+
+  &-title {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: $dark-color;
+    &-special {
+      font-size: 36px;
+    }
+  }
+  &-txt {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: $dark-color;
+  }
+  &-foto {
+    max-width: 880px;
+  }
+}

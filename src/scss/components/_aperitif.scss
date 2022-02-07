@@ -2,7 +2,7 @@
   margin-top: 50px;
   @include line;
   &-img {
-    height: 560px; //для элемента img не задается одновременно и высота и ширина(картинка исказится) если width: 100% то  height: auto(чтобы подстраивалось соответственно пропорциям)
+    height: auto;
     width: 100%;
   }
   &-description {
