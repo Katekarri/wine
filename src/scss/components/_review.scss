@@ -1,10 +1,10 @@
 .review {
+  background-color: $dark-color;
+  padding: 50px 0;
   &-container {
-    background-color: $dark-color;
     max-width: 1440px;
     display: flex;
-    padding: 75px 50px 50px;
-    gap: 160px;
+    justify-content: space-between;
   }
   &-quot {
     font-weight: 400;
@@ -35,7 +35,7 @@
     display: block;
   }
 
-  &-wrap {
+  &-item {
     max-width: 330px;
   }
 }

@@ -1,9 +1,11 @@
 .qualities {
   display: flex;
   margin: 50px 0;
+  align-items: flex-end;
 
   &-description {
-    margin: 55px 108px 0 0;
+    width: 30%;
+    padding: 0 55px 0 0;
   }
 
   &-title {
@@ -23,7 +25,14 @@
     line-height: 32px;
     color: $dark-color;
   }
+
+  &-img {
+    text-align: right;
+    width: 70%;
+  }
   &-foto {
+    display: inline-block;
     max-width: 880px;
+    width: 100%;
   }
 }
