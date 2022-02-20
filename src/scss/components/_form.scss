@@ -1,0 +1,20 @@
+form {
+  margin-top: 14px;
+  input {
+    background-color: $dark-color;
+    border: none;
+    border-bottom: 2px solid #818181;
+    width: 380px;
+  }
+}
+.form-button {
+  background-color: $dark-color;
+  border: none;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: $primary-color;
+  cursor: pointer;
+}

@@ -26,14 +26,13 @@
   }
 
   &-learn {
+    margin-top: 25px;
     a {
-      display: block;
       font-size: 12px;
       line-height: 18px;
       color: $dark-color;
       letter-spacing: 1px;
       text-transform: uppercase;
-      margin-top: 25px;
     }
   }
 }
