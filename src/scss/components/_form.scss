@@ -1,10 +1,16 @@
 form {
+  position: relative;
   margin-top: 14px;
   input {
     background-color: $dark-color;
     border: none;
-    border-bottom: 2px solid #818181;
-    width: 380px;
+    border-bottom: 1px solid #818181;
+    width: 385px;
+    padding: 15px 0 15px 15px;
+    font-size: 9px;
+    line-height: 14px;
+    letter-spacing: 0.12px;
+    text-transform: uppercase;
   }
 }
 .form-button {
@@ -17,4 +23,9 @@ form {
   text-transform: uppercase;
   color: $primary-color;
   cursor: pointer;
+}
+.form-action {
+  position: absolute;
+  right: 0;
+  top: 14px;
 }
